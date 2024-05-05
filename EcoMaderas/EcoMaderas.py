@@ -2,7 +2,7 @@
 
 from rxconfig import config
 
-import reflex as rx
+import reflex as rx # type: ignore
 
 docs_url = "https://reflex.dev/docs/getting-started/introduction/"
 filename = f"{config.app_name}/{config.app_name}.py"
@@ -16,7 +16,7 @@ def index() -> rx.Component:
     return rx.center(
         rx.theme_panel(),
         rx.vstack(
-            rx.heading("Welcome to Reflex!", size="9"),
+            rx.heading("Eco Maderas", size="9"),
             rx.text("Get started by editing ", rx.code(filename)),
             rx.button(
                 "Check out our docs!",
